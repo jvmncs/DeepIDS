@@ -12,7 +12,7 @@ We've used the KDDCup99 dataset from [OpenML.org](https://www.openml.org/d/1110)
 
 Approach
 ---
-We trained three neural networks, as well as a logistic regression classifier for stacking.  All models were built with Keras running on Tensorflow.  The architectures can be found in each network's respective development notebook in `develop/`.  We trained each model using the Adam optimizer with a batch size of 32 and Keras defaults for beta hyperparameters.  We also used early stopping monitoring validation accuracy with a patience of three epochs. Other hyperparameters differed for each model, and are shown below:
+We trained three neural networks, as well as a logistic regression classifier for stacking.  All models were built with [Keras](https://keras.io) on a Tensorflow backend.  The architectures can be found in each network's respective development notebook in `develop/`.  We trained each model using the Adam optimizer with a batch size of 32 and Keras defaults for beta hyperparameters.  We also used early stopping monitoring validation accuracy with a patience of three epochs. Other hyperparameters differed for each model, and are shown below:
 
 |  | ReLU | SELU | ResNet | Stacker |
 | -------- | ---- | ---- | ------ | ------- |
@@ -31,7 +31,7 @@ We monitored validation accuracy to checkpoint the best model from each training
 | Validation | 0.99857 | 0.99889 | 0.99195 | 0.99943 |
 | Test | 0.99206 | 0.99780 | 0.99319 | 0.99819 |
 
-Below are our results on the test set.  Binary results are determined by converting the problem to a binary classification problem of normal vs. malicious connection attempts.  We've included a standard softmax classifier as a baseline.
+Below are our results on the test set.  Binary results are determined by converting predictions and labels to a binary classification of normal vs. malicious connection attempts.  Note that the result for binary recall is not a realistic estimate of real world performance, while precision estimates are more realistic.<sup>1</sup>  We've included a standard softmax classifier as a baseline.
 
 |  | Baseline | DeepIDS |
 | ----- | ----- | ----- |
@@ -45,3 +45,5 @@ Here are the binary results by class.  See [our blog post](http://blog.pandata.c
 Next Steps
 ---
 We were unaware of the existence of an updated intrusion detection benchmarking dataset until the end of this project.  Now that we know that NSL-KDD exists, we will be reiterating our method on it.  We will then perform a more complete literature search and compare our method with state of the art results.  Stay tuned!
+
+<sup>1</sup> This is due to deficiencies of the KDDCup99 dataset (as noted [here](data/README.md)).
