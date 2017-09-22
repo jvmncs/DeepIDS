@@ -39,7 +39,7 @@ Below are our results on the test set.  We've included a basic softmax classifie
 | Binary Precision | 1.0 | 0.99857 |
 | Binary Recall | 0.5 | 0.99974 |
 
-Here are the binary results by class.  See [our blog post](blog.pandata.co) for an interactive version.
+Here are the binary results by class.  See [our blog post](https://blog.pandata.co) for an interactive version.
 ![Binary results by class](figures/sankey.png)
 
 Next Steps
