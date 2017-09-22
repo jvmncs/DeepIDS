@@ -31,7 +31,7 @@ We monitored validation accuracy to checkpoint the best model from each training
 | Validation | 0.99857 | 0.99889 | 0.99195 | 0.99943 |
 | Test | 0.99206 | 0.99780 | 0.99319 | 0.99819 |
 
-Below are our results on the test set.  We've included a basic softmax classifier as a baseline.
+Below are our results on the test set.  Binary results are determined by converting the problem to a binary classification problem of normal vs. malicious connection attempts.  We've included a standard softmax classifier as a baseline.
 
 |  | Baseline | DeepIDS |
 | ----- | ----- | ----- |
