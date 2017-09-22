@@ -5,7 +5,7 @@ We were first alerted to the problems inherent to the KDDCup99 dataset through [
 
 The problems with KDDCup99 found in Tavallaee et al can be summarized as follows:
 1. Severe and unrealistic class imbalance
-2. Tons of duplicate samples (somewhere around 70%)
+2. Tons of duplicate samples (75-78%)
 3. Most samples are too easily classified for benchmarking based on accuracy/false positive rate
 
 The first two problems make it harder to learn useful models from the dataset, while the third prevents us from measuring false positive rate with precision.  We're not so concerned with the first two, since we managed to develop a pretty strong model despite these.
