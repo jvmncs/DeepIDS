@@ -39,6 +39,9 @@ Below are our results on the test set.  We've included a basic softmax classifie
 | Binary Precision | 1.0 | 0.99857 |
 | Binary Recall | 0.5 | 0.99974 |
 
+Here are the binary results by class.  See [our blog post](blog.pandata.co) for an interactive version.
+![Binary results by class](figures/sankey.png)
+
 Next Steps
 ---
-We were unaware of the existence of a new intrusion detection benchmarking dataset until the end of this project.  Now that we know that NSL-KDD exists, we will be reiterating our method on it.  We will then perform a more complete literature search and compare our method with state of the art results on both datasets.  Stay tuned!
+We were unaware of the existence of an updated intrusion detection benchmarking dataset until the end of this project.  Now that we know that NSL-KDD exists, we will be reiterating our method on it.  We will then perform a more complete literature search and compare our method with state of the art results.  Stay tuned!
