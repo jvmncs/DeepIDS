@@ -1,0 +1,12 @@
+,label,name
+0,0,back (dos)
+1,5,ipsweep (probe)
+2,9,neptune (dos)
+3,10,nmap (probe)
+4,11,normal connection
+5,14,pod (dos)
+6,15,portsweep (probe)
+7,17,satan (probe)
+8,18,smurf (dos)
+9,20,teardrop (dos)
+10,21,warezclient (remote to user)
