@@ -4,7 +4,7 @@ An intrusion detection system built on deep learning.
 
 Purpose
 ---
-As it stands, this project is intended to be a proof-of-value for an intrusion detection system, and not an intrusion prevention system.  Further work could extend this project to an IPS or a near-realtime IDS using a high-performance, distributed computing environment.
+As it stands, this project is intended to be a proof-of-concept for an intrusion detection system, and not an intrusion prevention system.  Further work could extend this project to an IPS or a near-realtime IDS using a high-performance, distributed computing environment.
 
 Data
 ---
